@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    app:cardMaxElevation="8dp"
+    android:background="@android:color/black"
+    android:layout_gravity="bottom"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:hint="Enter the room name"
+            android:layout_margin="5dp"
+            android:textColorHint="#333"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#333"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/nameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minHeight="@dimen/buttonHeight"
+            android:padding="10dp"
+            android:textColor="#666"
+            android:textColorHint="#666"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        <CheckBox
+            android:id="@+id/checkBoxFinished"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="is Live" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Cancel"
+                android:background="@drawable/btn_selector"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Create"
+                android:background="@drawable/btn_selector"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
