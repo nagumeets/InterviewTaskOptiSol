@@ -10,21 +10,7 @@ import com.google.android.material.tabs.TabLayout
 
 
 class MainActivity : AppCompatActivity() {
-    /*private var _binding: ActivityMainBinding? = null
-    private val binding get() = _binding!!
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        _binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_hos_fragment) as NavHostFragment
-        val navController = navHostFragment.navController
-        binding.videoBtn.setOnClickListener {
-            navController.navigate(R.id.videoFragment)
-        }
-        binding.feedBtn.setOnClickListener {
-            navController.navigate(R.id.feedFragment)
-        }
-    }*/
+
     lateinit var viewPager: ViewPager
     lateinit var tabLayout: TabLayout
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,7 +21,6 @@ class MainActivity : AppCompatActivity() {
         tabLayout = findViewById(R.id.
         tab_layout)
         setAdapters()
-
     }
 
     private fun setAdapters() {
